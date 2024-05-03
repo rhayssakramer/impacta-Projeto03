@@ -1,46 +1,45 @@
 ﻿@model impacta_Projeto03.Models.Produto
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Cadastro | Produtos";
 }
 
-<h1>Create</h1>
+<h1>Cadastro de Produtos</h1>
 
-<h4>Produto</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
+            <div class="form-group mb-3">
                 <label asp-for="ValorUnitario" class="control-label"></label>
                 <input asp-for="ValorUnitario" class="form-control" />
                 <span asp-validation-for="ValorUnitario" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group mb-3">
                 <label asp-for="PrecoVenda" class="control-label"></label>
                 <input asp-for="PrecoVenda" class="form-control" />
                 <span asp-validation-for="PrecoVenda" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group mb-3">
                 <label asp-for="Fornecedor" class="control-label"></label>
                 <input asp-for="Fornecedor" class="form-control" />
                 <span asp-validation-for="Fornecedor" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group mb-3">
                 <label asp-for="Categoria" class="control-label"></label>
                 <input asp-for="Categoria" class="form-control" />
                 <span asp-validation-for="Categoria" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+            <div class="form-group mt-2">
+                <input type="submit" value="Enviar" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <div class="btn btn-light mt-2"><a class="text-black" style="text-decoration: none;" asp-action="Index">Voltar</a></div>
 </div>
 
 @section Scripts {
