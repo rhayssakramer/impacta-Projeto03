@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\impacta-Projeto03.props" />
+</Project>
