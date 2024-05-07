@@ -2,24 +2,35 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewData["Title"] = "Login";
 }
 <html>
     <body>
-        <div class="container-fluid">
-        <form class="m-5">
-            <div class="col-md-12 offset-md-4">
-                <div class="form-group flex-row col-md-4 mb-2">
-                    <label class="mb-1" for="exampleInputEmail1">Endereço de email</label>
-                    <input type="email" class="form-control" style="min-width:50%;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+    <div class="container">
+        <form>
+            <div class="row justify-content-center align-items-center vh-100">
+                <div class="col-auto p-4 shadow-lg p-3 mb-5 bg-body-tertiary rounded mb-5">
+                    <div class="text-center">
+                        <h2>Login</h2>
+                    </div>
+                    <div class="form-floating col-auto mb-3">
+                        <input style="width: 350px;" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">E-mail</label>
+                    </div>
+                    <div class="form-floating col-auto">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Senha</label>
+                    </div>
+                    <div class="form-check mt-1">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">Lembre-me</label>
+                    </div>
+                    <div class="mt-2">
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                    </div>
                 </div>
-                <div class="form-group flex-row col-md-4 mb-2">
-                    <label class="mt-1" for="exampleInputPassword1">Senha</label>
-                    <input type="password" class="form-control" style="min-width:50%;" id="exampleInputPassword1" placeholder="Senha">
-                    <label> <input class="form-check-input mt-1" type="checkbox" value=""> Lembre-me  </label>
-                </div>
-                <button type="submit" class="btn btn-primary mt-2">Entrar</button>
             </div>
         </form>
-        </div>
+    </div>
     </body>
 </html>

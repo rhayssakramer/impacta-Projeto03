@@ -1,14 +1,11 @@
 ﻿@model impacta_Projeto03.Models.Funcionario
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalhes | Funcionários";
 }
-
-<h1>Details</h1>
-
-<div>
-    <h4>Funcionario</h4>
-    <hr />
+<h1 class="mt-3">Detalhes Funcionários</h1>
+<hr />
+<div id="detalhes" class="container">
     <dl class="row">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Nome)
@@ -91,6 +88,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.FuncionarioID">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a class="btn btn-primary" style="text-decoration: none;" asp-action="Edit" asp-route-id="@Model?.FuncionarioID">Editar</a>
+    <a class="btn btn-light" style="text-decoration: none;" asp-action="Index">Voltar</a>
 </div>

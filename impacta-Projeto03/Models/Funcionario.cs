@@ -25,10 +25,10 @@ namespace impacta_Projeto03.Models
         [Display(Name = "Data de Contratação")]
         public DateTime DataContratacao { get; set; }
 
-        [Display(Name = "Rua")]
+        [Display(Name = "Endereço")]
         public string? Rua { get; set; }
 
-        [Display(Name = "Nº")]
+        [Display(Name = "Número")]
         public int Numero { get; set; }
 
         [Display(Name = "Complemento")]
