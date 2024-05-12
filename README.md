@@ -1,7 +1,7 @@
 # Impacta - Projeto 03
 
 ## Curso Impacta
-> Projeto desenvolvido ao longo da segunda semana de treinamento da Impacta promovido pela Avanade.
+> Projeto desenvolvido ao longo da terceira semana de treinamento da Impacta promovido pela Avanade.
 
 ### Requisitos:
 - [x] Criar um MVC para Sistema de Controle de Vendas de uma empresa;
